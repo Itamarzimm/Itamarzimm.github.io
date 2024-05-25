@@ -22,7 +22,7 @@
                 <p class="name" style="text-align: center;">
                   Itamar Zimerman
                 </p>
-                <p>I am a PhD candidate in the <a href="https://en-exact-sciences.tau.ac.il/computer">Blavatnik School of Computer Science </a> at Tel Aviv University, privileged to be advised by <a href="https://www.cs.tau.ac.il/~wolf/">Prof. Lior Wolf.</a> Additionally, I work as an AI research scientist at IBM Research.
+                <p>I am a PhD candidate in the <a href="https://en-exact-sciences.tau.ac.il/computer">Blavatnik School of Computer Science </a> at Tel Aviv University, advised by <a href="https://www.cs.tau.ac.il/~wolf/">Prof. Lior Wolf. </a> Additionally, I work as an AI research scientist at IBM Research.
 		</p>
               
                 <p style="text-align:center">
@@ -42,9 +42,10 @@
               <td style="padding:15px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                 My research focuses on modern deep learning architectures, with a particular emphasis on improving their capabilities in language modelling, computer vision, and crypto applications. I am passionate about developing architectures and understanding their design principles, especially transformers and state-space layers. Representative papers are <span class="highlight">highlighted</span>.
+                  My research focuses on modern deep learning architectures, with a particular emphasis on improving their capabilities in language modeling, computer vision, and crypto applications. I am passionate about developing architectures and understanding their design principles, especially transformers, state-space layers and modern RNNs.
                 </p>
                 <h2> Selected Publications</h2>
+                Representative papers are <span class="highlight">highlighted</span>. '*' indicates equal contribution.
               </td>
             </tr>
           </tbody></table>
@@ -71,12 +72,11 @@
             </td>
             <td style="padding:10px;width:70%;vertical-align:top">
             <a href="TODO">
-            <span class="papertitle">Viewing Transformers Through the Lens of Long Convolutions Layers</span>
+            <span class="papertitle"><span class="highlight"> Viewing Transformers Through the Lens of Long Convolutions Layers</span></span>
             </a> <br>
-            <strong>I. Zimerman</strong>,
-            L. Wolf
+            <strong>I. Zimerman</strong>, L. Wolf
             <p>
-              We investigate the design principles that enable long-range layers, such as state-space models and Hyena.
+              We investigate the design principles that enable long-range layers, such as state-space models and Hyena, to outperform transformers on long-range tasks.
             </p>
         
             <em>ICML</em>, 2024
@@ -112,7 +112,7 @@
     <strong>I. Zimerman</strong>,
     M. Baruch, N. Drucker, G. Ezov, O. Soceanu, L. Wolf
     <p>
-      We investigate the design principles that enable long-range layers, such as state-space models and Hyena.
+      We introduce the first polynomial transformer, which is based on a novel alternative to softmax and layer normalization. This breakthrough enables the application of transformers on encrypted data for the first time.
     </p>
  
     <em>ICML</em>, 2024
@@ -144,13 +144,13 @@
   <td style="padding:10px;width:70%;vertical-align:top">
   <a href="TODO">
   <span class="papertitle">	
-    The Hidden Attention of Mamba Models</span>
+    <span class="highlight"> The Hidden Attention of Mamba Models</span> </span>
   </a> <br>
-  A. Ali, <strong>I. Zimerman</strong>, L. Wolf
+  A. Ali*, <strong>I. Zimerman*</strong>, L. Wolf
   <p>
-    We investigate the design principles that enable long-range layers, such as state-space models and Hyenas, to outperform transformers on LRD tasks.
+    We establish the connection between S6 layers and causal self-attention, demonstrating that both rely on a data-control linear operator, which can be represented through attention matrices. Using these matrices, we introduce the first explainability tools for Mamba models.
   </p>
-    <em>Arxiv, 2024</em>
+    <em>arXiv, 2024</em>
 
   </td>
 </tr>
@@ -179,11 +179,11 @@
   <td style="padding:10px;width:70%;vertical-align:top">
   <a href="TODO">
   <span class="papertitle">	
-    A 2-Dimensional State Space Layer for Spatial Inductive Bias</span>
+    <span class="highlight"> A 2-Dimensional State Space Layer for Spatial Inductive Bias</span> </span>
   </a> <br>
-  E. Baron, <strong>I. Zimerman</strong>, L. Wolf
+  E. Baron*, <strong>I. Zimerman*</strong>, L. Wolf
   <p>
-    We investigate the design principles that enable long-range layers, such as state-space models and Hyena.
+    2D-SSM is a spatial layer that extends S4 into multi-axis data and is parametrized by 2-D recursion. Empirically, it enhances the performance of various ViTs and ConvNeXt backbones. Theoretically, our layer is more expressive than previous extensions.
   </p>
   <em>ICLR</em>, 2024
 
@@ -216,10 +216,9 @@
   <span class="papertitle">	
     Multi-Dimensional Hyena for Spatial Inductive Bias</span>
   </a> <br>
-  <strong>I. Zimerman</strong>,
-  <a href="https://arxiv.org/abs/2309.13600">L. Wolf</a>,
+  <strong>I. Zimerman</strong>, L. Wolf
   <p>
-    We investigate the design principles that enable long-range layers, such as state-space models and Hyena.
+    We present Hyena N-D, a theoretically grounded extension of the Hyena layer to multi-axis sequence modeling. We show that when incorporated into a ViT instead of an attention mechanism, it results in a data- and memory-efficient model.
   </p>
   <em>AISTATS</em>, 2024
 
@@ -250,11 +249,11 @@
   <td style="padding:10px;width:70%;vertical-align:top">
   <a href="TODO">
   <span class="papertitle">	
-    Focus Your Attention (with Adaptive IIR Filters)</span>
+    <span class="highlight"> Focus Your Attention (with Adaptive IIR Filters) </span></span>
   </a> <br>
-  S. Lutati, <strong>I. Zimerman</strong>, L. Wolf,
+  S. Lutati, <strong>I. Zimerman</strong>, L. Wolf
   <p>
-    We investigate the design principles that enable long-range layers, such as state-space models and Hyena.
+    Focus is a new architecture for LMs built on adaptive IIR filters. We show that second-order IIR filters are theoretically more expressive than state-space models, yet still stable. We boost the performance of these filters by making them adaptive, with the first global-convolution-based hypernetwork.
   </p>
   <em>EMNLP</em>, 2023 <span style="color: red;">(Oral presentation)</span>
 
@@ -287,9 +286,9 @@
   <span class="papertitle">	
     Decision S4: Efficient Sequence-Based RL via State Spaces Layers</span>
   </a> <br>
-  S. Bar-David, <strong>I. Zimerman</strong>, E. Nachmani, L. Wolf
+  S. Bar-David*, <strong>I. Zimerman*</strong>, E. Nachmani, L. Wolf
   <p>
-    We investigate the design principles that enable long-range layers, such as state-space models and Hyena.
+    We explore the application of the state-space layers in offline and online RL, highlighting its superiority in handling long-range dependencies and its improved efficiency over transformers.
   </p>
   <em>ICLR</em>, 2023
 
@@ -322,9 +321,9 @@
   <span class="papertitle">	
     Recovering AES Keys with a Deep Cold Boot Attack</span>
   </a> <br>
-  <strong>I. Zimerman</strong>, E. Nachmani, L. Wolf
+  <strong>I. Zimerman*</strong>, E. Nachmani*, L. Wolf
   <p>
-    We investigate the design principles that enable long-range layers, such as state-space models and Hyena.
+    Here we present a DL-based side-channel attack on AES keys. Our method combines a SAT solver with neural tools from the field of error correction coding to enhance attack effectiveness.
   </p>
   <em>ICML</em>, 2021
 
