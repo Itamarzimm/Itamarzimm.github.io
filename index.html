@@ -13,6 +13,8 @@
   </head>
 
   <body>
+
+    
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
@@ -49,6 +51,39 @@
               </td>
             </tr>
           </tbody></table>
+          <table style="width:100%;border:10px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+            <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
+            <td style="padding:10px;width:30%;vertical-align:middle">
+            <div class="one">
+            <div class="two" id='pnf_image'>
+              <img src='images/allAsAttention.jpg' width="200"></div>
+            <img src='images/allAsAttention.jpg' width="200">
+            </div>
+            <script type="text/javascript">
+            function pnf_start() {
+              document.getElementById('pnf_image').style.opacity = "1";
+            }
+
+            function pnf_stop() {
+              document.getElementById('pnf_image').style.opacity = "0";
+            }
+            pnf_stop()
+            </script>
+            </td>
+            <td style="padding:10px;width:70%;vertical-align:top">
+            <a href="https://arxiv.org/abs/2405.16504">
+            <span class="papertitle"><span class="highlight"> A Unified Implicit Attention Formulation for Gated-Linear Recurrent Sequence Models</span></span>
+            </a> <br>
+            <strong>I. Zimerman*</strong>, A. Ali*, L. Wolf
+            <p>
+              We introduce a unified representation of attention-free layers, including Mamba, RWKV, RetNet, and Griffin, using an implicit self-attention formula. Our approach is more comprehensive and precise than previously proposed frameworks, and it significantly enhances the interpretability and explainability of these models.  
+            </p>
+            <em>arXiv</em>, 2024
+          
+            </td>
+      </tr>  
           <table style="width:100%;border:10px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
