@@ -53,8 +53,38 @@
           </tbody></table>
           <table style="width:100%;border:10px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
             <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
+              <td style="padding:10px;width:30%;vertical-align:middle">
+              <div class="one">
+              <div class="two" id='pnf_image'>
+                <img src='images/deciMambaMethod.jpg' width="200"></div>
+              <img src='images/deciMambaMethod.jpg' width="200">
+              </div>
+              <script type="text/javascript">
+              function pnf_start() {
+                document.getElementById('pnf_image').style.opacity = "1";
+              }
+  
+              function pnf_stop() {
+                document.getElementById('pnf_image').style.opacity = "0";
+              }
+              pnf_stop()
+              </script>
+              </td>
+              <td style="padding:10px;width:70%;vertical-align:top">
+              <a href="https://arxiv.org/pdf/2406.14528v1">
+              <span class="papertitle"><span class="highlight"> DeciMamba: Exploring the Length Extrapolation Potential of Mamba</span></span>
+              </a> <br>
+              A. Ben-Kish, <strong>I. Zimerman,</strong>   S. Abu-Hussein, N. Cohen, A. Globerson, L. Wolf, R. Giryes
+              <p>
+                We investigate the length-extrapolation capabilities of Mamba models, revealing their limited effective receptive field. To address these limitations, we introduce DeciMamba, the first context-extension method specifically designed for Mamba. Empirical experiments on real-world long-range NLP tasks demonstrate that DeciMamba can extrapolate to context lengths up to 25 times longer than those encountered during training.  
+              </p>
+              <em>arXiv</em>, 2024
+            
+              </td>
+        </tr>
+
+          <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
             <td style="padding:10px;width:30%;vertical-align:middle">
             <div class="one">
             <div class="two" id='pnf_image'>
