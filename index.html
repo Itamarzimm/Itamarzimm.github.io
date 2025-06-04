@@ -39,6 +39,8 @@
               </td>
             </tr>
           </tbody></table>
+          
+        </tr>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:15px;width:100%;vertical-align:middle">
@@ -51,7 +53,100 @@
               </td>
             </tr>
           </tbody></table>
+          
+          
           <table style="width:100%;border:10px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
+              <td style="padding:10px;width:30%;vertical-align:middle">
+              <div class="one">
+              <div class="two" id='pnf_image'>
+                <img src='images/PELRP-image.jpg' width="200"></div>
+              <img src='images/PELRP-image.jpg' width="200">
+              </div>
+              <script type="text/javascript">
+              function pnf_start() {
+                document.getElementById('pnf_image').style.opacity = "1";
+              }
+  
+              function pnf_stop() {
+                document.getElementById('pnf_image').style.opacity = "0";
+              }
+              pnf_stop()
+              </script>
+              </td>
+              <td style="padding:10px;width:70%;vertical-align:top">
+              <a href="https://www.arxiv.org/abs/2506.02138">
+              <span class="papertitle"> Revisiting LRP: Positional Attribution as the Missing Ingredient for Transformer Explainability</span></span>
+              </a> <br>
+              Y. Bakish, <strong>I. Zimerman,</strong> H. Chefer, L. Wolf
+              <p>
+                Attribution methods that assign relevance to tokens are key to extracting explanations from Transformers and LLMs. However, we obsrve that existing approaches often produce fragmented and unstructured heatmaps because they do not propagate attribution through positional encodings (PE). To address this, we propose PE-Aware LRP, which reformulates the input space of the XAI problem as token-position pairs and introduces theoretically grounded LRP rules for PE components such as Rotary.
+              </p>
+              <em>arXiv</em>, 2025
+              </td>
+        </tr>
+
+          <table style="width:100%;border:10px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
+              <td style="padding:10px;width:30%;vertical-align:middle">
+              <div class="one">
+              <div class="two" id='pnf_image'>
+                <img src='images/OPRM_main_fig.jpg' width="200"></div>
+              <img src='images/OPRM_main_fig.jpg' width="200">
+              </div>
+              <script type="text/javascript">
+              function pnf_start() {
+                document.getElementById('pnf_image').style.opacity = "1";
+              }
+  
+              function pnf_stop() {
+                document.getElementById('pnf_image').style.opacity = "0";
+              }
+              pnf_stop()
+              </script>
+              </td>
+              <td style="padding:10px;width:70%;vertical-align:top">
+              <a href="https://arxiv.org/pdf/2505.07793">
+              <span class="papertitle"> Overflow Prevention Enhances Long-Context Recurrent LLMs</span></span>
+              </a> <br>
+              A. Ben-Kish, <strong>I. Zimerman,</strong> M. Jehanzeb Mirza, J. Glass, L. Karlinsky, R. Giryes
+              <p>
+                While recurrent LLMs such as Falcon-Mamba designed for long-context efficiency, we find their effectiveness remains limited due to memory overflows. To address this, we introduce a simple chunk-based inference method that selects only the most relevant input segment, improving performance by 28 to 51 % on LongBench and achieving SoTA results on LongBench v2, outperforming Transformers of similar size. These findings provide a clearer view of the actual performance of leading LLMs and highlight the surprising strength of a single well-chosen chunk.  
+              </p>
+              <em>arXiv</em>, 2025
+              </td>
+        </tr>
+          <table style="width:100%;border:10px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
+              <td style="padding:10px;width:30%;vertical-align:middle">
+              <div class="one">
+              <div class="two" id='pnf_image'>
+                <img src='images/OnTheExpressivityofMambaPoly.jpg' width="200"></div>
+              <img src='images/OnTheExpressivityofMambaPoly.jpg' width="200">
+              </div>
+              <script type="text/javascript">
+              function pnf_start() {
+                document.getElementById('pnf_image').style.opacity = "1";
+              }
+  
+              function pnf_stop() {
+                document.getElementById('pnf_image').style.opacity = "0";
+              }
+              pnf_stop()
+              </script>
+              </td>
+              <td style="padding:10px;width:70%;vertical-align:top">
+              <a href="https://arxiv.org/abs/2502.02209">
+              <span class="papertitle"> On the Expressivity of Selective State-Space Layers: A Multivariate Polynomial Approach</span></span>
+              </a> <br>
+              E. Cohen-Karlik*, <strong>I. Zimerman*,</strong> L. Galanti*, I. Atad, A. Globerson, L. Wolf
+              <p>
+                We investigate the expressivity of Mamba compared to Transformers via multivariate polynomials and show the theoretical advantages of the Mamba layer. While the expressivity is higher, especially for long sequences, we show that this does not come at the expense of generalization.
+              </p>
+              <em>arXiv</em>, 2025
+              </td>
+        </tr>
+
 
             <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
               <td style="padding:10px;width:30%;vertical-align:middle">
