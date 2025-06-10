@@ -60,6 +60,36 @@
               <td style="padding:10px;width:30%;vertical-align:middle">
               <div class="one">
               <div class="two" id='pnf_image'>
+                <img src='images/loading_Bar.jpg' width="240"></div>
+              <img src='images/loading_Bar.jpg' width="240">
+              </div>
+              <script type="text/javascript">
+              function pnf_start() {
+                document.getElementById('pnf_image').style.opacity = "1";
+              }
+  
+              function pnf_stop() {
+                document.getElementById('pnf_image').style.opacity = "0";
+              }
+              pnf_stop()
+              </script>
+              </td>
+              <td style="padding:10px;width:70%;vertical-align:top">
+              <a href="https://arxiv.org/pdf/2506.07240">
+              <span class="papertitle"><span class="highlight">Overclocking LLM Reasoning: Monitoring and Controlling Thinking Path Lengths in LLMs</span></span>
+              </a> <br>
+              R. Eisenstadt, <strong>I. Zimerman,</strong> L. Wolf
+              <p>
+                We show that LLMs internally track their progress during explicit reasoning. By identifying this thinking progress signal, we leverage it to monitor reasoning with an interactive progress bar and to control the thinking length by overclocking (shortening) it. Our method improves DeepSeek-R1 in both efficiency and effectiveness by enforcing more decisive thinking. Finally, our work sheds light on the planning abilities and self-regulation mechanisms of LLMs.
+              </p>
+              <em>arXiv</em>, 2025
+              </td>
+        </tr>
+
+            <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
+              <td style="padding:10px;width:30%;vertical-align:middle">
+              <div class="one">
+              <div class="two" id='pnf_image'>
                 <img src='images/PELRP-image.jpg' width="200"></div>
               <img src='images/PELRP-image.jpg' width="200">
               </div>
@@ -76,7 +106,7 @@
               </td>
               <td style="padding:10px;width:70%;vertical-align:top">
               <a href="https://www.arxiv.org/abs/2506.02138">
-              <span class="papertitle"> Revisiting LRP: Positional Attribution as the Missing Ingredient for Transformer Explainability</span></span>
+              <span class="papertitle"><span class="highlight"> Revisiting LRP: Positional Attribution as the Missing Ingredient for Transformer Explainability</span></span>
               </a> <br>
               Y. Bakish, <strong>I. Zimerman,</strong> H. Chefer, L. Wolf
               <p>
@@ -142,6 +172,36 @@
               E. Cohen-Karlik*, <strong>I. Zimerman*,</strong> L. Galanti*, I. Atad, A. Globerson, L. Wolf
               <p>
                 We investigate the expressivity of Mamba compared to Transformers via multivariate polynomials and show the theoretical advantages of the Mamba layer. While the expressivity is higher, especially for long sequences, we show that this does not come at the expense of generalization.
+              </p>
+              <em>arXiv</em>, 2025
+              </td>
+        </tr>
+        <table style="width:100%;border:10px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
+              <td style="padding:10px;width:30%;vertical-align:middle">
+              <div class="one">
+              <div class="two" id='pnf_image'>
+                <img src='images/powersoftmax.jpg' width="200"></div>
+              <img src='images/powersoftmax.jpg' width="200">
+              </div>
+              <script type="text/javascript">
+              function pnf_start() {
+                document.getElementById('pnf_image').style.opacity = "1";
+              }
+  
+              function pnf_stop() {
+                document.getElementById('pnf_image').style.opacity = "0";
+              }
+              pnf_stop()
+              </script>
+              </td>
+              <td style="padding:10px;width:70%;vertical-align:top">
+              <a href="https://arxiv.org/pdf/2410.09457">
+              <span class="papertitle"> Power-Softmax: Towards Secure LLM Inference over Encrypted Data</span></span>
+              </a> <br>
+              <strong>I. Zimerman,</strong> A. Adir, E. Aharoni, M. Avitan, M. Baruch, N. Drucker, J. Lerner, R. Masalha, R. Meiri, O. Soceanu
+              <p>
+                We introduce PowerSoftmax, an HE-friendly self-attention mechanism that enables fully polynomial transformers for scalable secure inference with Homomorphic Encryption (HE). Our method enables the first polynomial LLMs with 32 layers and 1.4 billion parameters, achieving strong reasoning and in-context learning (ICL) capabilities. This work advances the field of privacy-preserving LLM inference.
               </p>
               <em>arXiv</em>, 2025
               </td>
