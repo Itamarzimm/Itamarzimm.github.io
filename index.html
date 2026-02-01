@@ -56,6 +56,40 @@
           
           
           <table style="width:100%;border:10px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                    </tr>
+          <table style="width:100%;border:10px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
+              <td style="padding:10px;width:30%;vertical-align:middle">
+              <div class="one">
+              <div class="two" id='pnf_image'>
+                <img src='images/TensorLens.png' width="200"></div>
+              <img src='images/TensorLens.png' width="200">
+              </div>
+              <script type="text/javascript">
+              function pnf_start() {
+                document.getElementById('pnf_image').style.opacity = "1";
+              }
+  
+              function pnf_stop() {
+                document.getElementById('pnf_image').style.opacity = "0";
+              }
+              pnf_stop()
+              </script>
+              </td>
+              <td style="padding:10px;width:70%;vertical-align:top">
+              <a href="https://www.arxiv.org/abs/2601.17958">
+              <span class="papertitle"> TensorLens: End-to-End Transformer Analysis via High-Order Attention Tensors </span></span>
+              </a> <br>
+              I. Atad, <strong>I. Zimerman</strong>, S. Katz, L. Wolf 
+              <p>
+                We introduce TensorLens! A tensor algebra based reformulation of Transformers as a single input-dependent high order attention tensor that generalizes attention matrices in two ways: (i) it can include FFNs, embeddings, and any part of the computational graph, and (ii) it is modular, so it can aggregate any Transformer circuit (specific heads, subsets of layers, and more) into a single tensor. Empirically, we found that TensorLens reflects model behavior better than attention matrices and prior aggregation methods, and it has practical interpretability applications such as linear relation decoding.
+              </p>
+              <em> arXiv</em>, 2026
+              </td>
+        </tr>  
+
+                </tr>
+            
             <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
               <td style="padding:10px;width:30%;vertical-align:middle">
               <div class="one">
@@ -85,6 +119,67 @@
               <em>arXiv</em>, 2025
               </td>
         </tr>
+        
+            
+            <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
+              <td style="padding:10px;width:30%;vertical-align:middle">
+              <div class="one">
+              <div class="two" id='pnf_image'>
+                <img src='images/OnTheExpressivityofMambaPoly.jpg' width="200"></div>
+              <img src='images/OnTheExpressivityofMambaPoly.jpg' width="200">
+              </div>
+              <script type="text/javascript">
+              function pnf_start() {
+                document.getElementById('pnf_image').style.opacity = "1";
+              }
+  
+              function pnf_stop() {
+                document.getElementById('pnf_image').style.opacity = "0";
+              }
+              pnf_stop()
+              </script>
+              </td>
+              <td style="padding:10px;width:70%;vertical-align:top">
+              <a href="https://arxiv.org/abs/2502.02209">
+              <span class="papertitle"> On the Expressivity of Selective State-Space Layers: A Multivariate Polynomial Approach</span></span>
+              </a> <br>
+              E. Cohen-Karlik*, <strong>I. Zimerman*,</strong> L. Galanti*, I. Atad, A. Globerson, L. Wolf
+              <p>
+                We investigate the expressivity of Mamba compared to Transformers via multivariate polynomials and show the theoretical advantages of the Mamba layer. While the expressivity is higher, especially for long sequences, we show that this does not come at the expense of generalization.
+              </p>
+              <em>AISTATS</em>, 2026
+              </td>
+        </tr>
+        <table style="width:100%;border:10px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
+              <td style="padding:10px;width:30%;vertical-align:middle">
+              <div class="one">
+              <div class="two" id='pnf_image'>
+                <img src='images/powersoftmax.jpg' width="200"></div>
+              <img src='images/powersoftmax.jpg' width="200">
+              </div>
+              <script type="text/javascript">
+              function pnf_start() {
+                document.getElementById('pnf_image').style.opacity = "1";
+              }
+  
+              function pnf_stop() {
+                document.getElementById('pnf_image').style.opacity = "0";
+              }
+              pnf_stop()
+              </script>
+              </td>
+              <td style="padding:10px;width:70%;vertical-align:top">
+              <a href="https://arxiv.org/pdf/2410.09457">
+              <span class="papertitle"> Power-Softmax: Towards Secure LLM Inference over Encrypted Data</span></span>
+              </a> <br>
+              <strong>I. Zimerman,</strong> A. Adir, E. Aharoni, M. Avitan, M. Baruch, N. Drucker, J. Lerner, R. Masalha, R. Meiri, O. Soceanu
+              <p>
+                We introduce PowerSoftmax, an HE-friendly self-attention mechanism that enables fully polynomial transformers for scalable secure inference with Homomorphic Encryption (HE). Our method enables the first polynomial LLMs with 32 layers and 1.4 billion parameters, achieving strong reasoning and in-context learning (ICL) capabilities. This work advances the field of privacy-preserving LLM inference.
+              </p>
+              <em>AISTATS</em>, 2026
+              </td>
+
 
             <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
               <td style="padding:10px;width:30%;vertical-align:middle">
@@ -145,68 +240,6 @@
               </p>
               <em>COLM</em>, 2025
               </td>
-        </tr>
-          <table style="width:100%;border:10px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
-              <td style="padding:10px;width:30%;vertical-align:middle">
-              <div class="one">
-              <div class="two" id='pnf_image'>
-                <img src='images/OnTheExpressivityofMambaPoly.jpg' width="200"></div>
-              <img src='images/OnTheExpressivityofMambaPoly.jpg' width="200">
-              </div>
-              <script type="text/javascript">
-              function pnf_start() {
-                document.getElementById('pnf_image').style.opacity = "1";
-              }
-  
-              function pnf_stop() {
-                document.getElementById('pnf_image').style.opacity = "0";
-              }
-              pnf_stop()
-              </script>
-              </td>
-              <td style="padding:10px;width:70%;vertical-align:top">
-              <a href="https://arxiv.org/abs/2502.02209">
-              <span class="papertitle"> On the Expressivity of Selective State-Space Layers: A Multivariate Polynomial Approach</span></span>
-              </a> <br>
-              E. Cohen-Karlik*, <strong>I. Zimerman*,</strong> L. Galanti*, I. Atad, A. Globerson, L. Wolf
-              <p>
-                We investigate the expressivity of Mamba compared to Transformers via multivariate polynomials and show the theoretical advantages of the Mamba layer. While the expressivity is higher, especially for long sequences, we show that this does not come at the expense of generalization.
-              </p>
-              <em>AISTATS</em>, 2026
-              </td>
-        </tr>
-        <table style="width:100%;border:10px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
-              <td style="padding:10px;width:30%;vertical-align:middle">
-              <div class="one">
-              <div class="two" id='pnf_image'>
-                <img src='images/powersoftmax.jpg' width="200"></div>
-              <img src='images/powersoftmax.jpg' width="200">
-              </div>
-              <script type="text/javascript">
-              function pnf_start() {
-                document.getElementById('pnf_image').style.opacity = "1";
-              }
-  
-              function pnf_stop() {
-                document.getElementById('pnf_image').style.opacity = "0";
-              }
-              pnf_stop()
-              </script>
-              </td>
-              <td style="padding:10px;width:70%;vertical-align:top">
-              <a href="https://arxiv.org/pdf/2410.09457">
-              <span class="papertitle"> Power-Softmax: Towards Secure LLM Inference over Encrypted Data</span></span>
-              </a> <br>
-              <strong>I. Zimerman,</strong> A. Adir, E. Aharoni, M. Avitan, M. Baruch, N. Drucker, J. Lerner, R. Masalha, R. Meiri, O. Soceanu
-              <p>
-                We introduce PowerSoftmax, an HE-friendly self-attention mechanism that enables fully polynomial transformers for scalable secure inference with Homomorphic Encryption (HE). Our method enables the first polynomial LLMs with 32 layers and 1.4 billion parameters, achieving strong reasoning and in-context learning (ICL) capabilities. This work advances the field of privacy-preserving LLM inference.
-              </p>
-              <em>AISTATS</em>, 2026
-              </td>
-        </tr>
-
 
             <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
               <td style="padding:10px;width:30%;vertical-align:middle">
