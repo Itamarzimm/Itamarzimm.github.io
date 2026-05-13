@@ -133,3 +133,25 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+@media screen and (max-width: 600px) {
+  td[style*="width:30%"],
+  td[style*="width:70%"] {
+    display: block;
+    width: 100% !important;
+    text-align: center;
+  }
+
+  td[style*="width:30%"] img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+  }
+
+  .one, .two {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
