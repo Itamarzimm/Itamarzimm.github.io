@@ -120,6 +120,36 @@
               </td>
         </tr>
 
+            <tr onmouseout="pnf_stop_18()" onmouseover="pnf_start_18()">
+              <td style="padding:10px;width:30%;vertical-align:middle">
+              <div class="one">
+              <div class="two" id='pnf_image_18'>
+                <img src='images/CLIMP.png' width="200"></div>
+              <img src='images/CLIMP.png' width="200">
+              </div>
+              <script type="text/javascript">
+              function pnf_start_18() {
+                document.getElementById('pnf_image_18').style.opacity = "1";
+              }
+
+              function pnf_stop_18() {
+                document.getElementById('pnf_image_18').style.opacity = "0";
+              }
+              pnf_stop_18()
+              </script>
+              </td>
+              <td style="padding:10px;width:70%;vertical-align:top">
+              <a href="https://arxiv.org/abs/2601.06891">
+              <span class="papertitle"> CLIMP: Contrastive Language-Image Mamba Pretraining</span></span>
+              </a> <br>
+              N. Shabtay, <strong>I. Zimerman,</strong> E. Schwartz, R. Giryes
+              <p>
+                We introduce CLIMP, a vision-language model that replaces both the vision and text encoders of CLIP with Mamba. This design is more robust, natively handles variable input resolutions without positional-encoding interpolation, and is more memory- and compute-efficient than its Transformer-based counterpart. Overall, CLIMP shows that Mamba is a compelling alternative to Transformers for vision-language learning.
+              </p>
+              <em> ECCV</em>, 2026
+              </td>
+        </tr>
+
             <tr onmouseout="pnf_stop_2()" onmouseover="pnf_start_2()">
               <td style="padding:10px;width:30%;vertical-align:middle">
               <div class="one">
